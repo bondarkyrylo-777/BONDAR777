@@ -1,0 +1,71 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    cout << " l " << endl;
+    cout << " o " << endl;
+    cout << " h " << endl;
+    return 0;
+}
+#include <iostream>
+#include <string>    
+using namespace std;
+
+int main() {
+    string text;       
+    cout << "required row: ";
+    getline(cin, text);
+    cout << " row: " << text.length() << endl;
+
+    return 0;
+}
+#include <iostream>
+using namespace std;
+
+int main() {
+    int width;      int height;  
+    cout << " Insert Width ";
+    cin >> width;
+
+    cout << " Insert Height ";
+    cin >> height;
+
+         for (int H = 0; H < height; H++) {          
+  for (int W = 0; W < width; W++) {              
+   cout << "*";
+        }
+        cout << endl;     }
+
+    return 0;
+}
+#include <iostream>
+using namespace std;
+
+int main() {
+    int H;
+
+    cout << " Insert rhombus size (no even numbers, odd only): ";
+    cin >> H;
+
+    for (int rydok = 1; rydok <= H; rydok += 2) {
+        for (int romb = 0; romb < H - rydok; romb++) {
+            cout << " ";
+        }
+        for (int romb = 0; romb < rydok; romb++) {
+            cout << "*";
+        }
+        cout << endl;
+    }
+
+    for (int rydok = H - 2; rydok >= 1; rydok -= 2) {
+              for (int romb = 0; romb< H - rydok; romb++) {
+            cout << " ";
+        }
+        for (int romb = 0; romb < rydok; romb++) {
+            cout << "*";
+        }
+        cout << endl;
+    }
+
+    return 0;
+}
